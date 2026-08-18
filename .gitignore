@@ -1,0 +1,38 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Android Build Artifacts & Local Settings
+android/.gradle/
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/
+**/local.properties
+
+# iOS Build Artifacts
+ios/App/build/
+ios/App/Pods/
+ios/App/DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
