@@ -32,7 +32,7 @@ jobs:
       - name: Build Xcode Project
         run: |
           cd ios/App
-          xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphoneos -derivedDataPath build
+          xcodebuild -project App.xcodeproj -scheme App -configuration Debug -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOWED=NO
 
       - name: Upload iOS App Artifact
         uses: actions/upload-artifact@v4
